@@ -1,4 +1,3 @@
-//this is for crawl words 
 $('body').mouseup(function() {
     var text=getSelectedText();
     if (text!='') {
@@ -7,7 +6,10 @@ $('body').mouseup(function() {
     var words = text.split(" ");
     for(var i=0; i< words.length; i++)
     {
-        console.log(words[i]);
+        if(words[i]!="")
+        {
+            console.log(words[i]);
+        }
     }
     window.speechSynthesis.speak(msg);
     }

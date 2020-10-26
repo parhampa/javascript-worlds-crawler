@@ -1,3 +1,4 @@
+//this is for crawl words 
 $('body').mouseup(function() {
     var text=getSelectedText();
     if (text!='') {
